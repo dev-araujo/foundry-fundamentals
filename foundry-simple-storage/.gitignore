@@ -12,3 +12,20 @@ docs/
 
 # Dotenv file
 .env
+
+# Dependencies
+lib/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Editor Specific Files
+.vscode/
+.idea/
+
+# Test Coverage Reports
+coverage/
+
+# Log files
+*.log
