@@ -1,5 +1,6 @@
-import { ethers } from "./ethers-6.7.esm.min.js"
 import { abi, contractAddress } from "./constants.js"
+
+import { ethers } from "./ethers-6.7.esm.min.js"
 
 const connectButton = document.getElementById("connectButton")
 const withdrawButton = document.getElementById("withdrawButton")
@@ -71,7 +72,7 @@ async function getBalance() {
     const provider = new ethers.BrowserProvider(window.ethereum)
     try {
       const balance = await provider.getBalance(contractAddress)
-      console.log(ethers.formatEther(balance))
+      console.log(`${String(ethers.formatEther(balance))}`)
     } catch (error) {
       console.log(error)
     }
